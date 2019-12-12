@@ -1,0 +1,7 @@
+Credentials cache: API:1424510
+        Principal: aroque@42SP.ORG.BR
+
+  Issued                Expires               Principal
+Nov 19 07:39:18 2019  Nov 19 17:39:20 2019  krbtgt/42SP.ORG.BR@42SP.ORG.BR
+Nov 19 07:39:19 2019  Nov 19 17:39:20 2019  HTTP/student-storage.42sp.org.br@42SP.ORG.BR
+Nov 19 08:07:52 2019  Nov 19 17:39:20 2019  host/vogsphere.42sp.org.br@42SP.ORG.BR
