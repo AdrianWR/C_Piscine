@@ -6,7 +6,7 @@
 /*   By: aroque <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/22 19:52:06 by aroque            #+#    #+#             */
-/*   Updated: 2019/11/27 17:22:55 by aroque           ###   ########.fr       */
+/*   Updated: 2019/12/31 12:30:06 by aroque           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,22 +19,25 @@ void	ft_putchar(char c)
 
 void	ft_putnbr(int nb)
 {
-	if (nb == -2147483648)
-	{
-		write(1, "-2147483648", 11);
-	}
-	else if (nb < 0)
-	{
+        unsigned int n;
+
+        n = 0;
+	if (nb < 0)
+        {
 		ft_putchar('-');
-		ft_putnbr(-nb);
-	}
-	else if (nb > 9)
-	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
-	}
+		n = -nb;
+        }
+        if (nb >= 0)
+        {
+                n = nb;
+        }
+	if (n >= 10)
+        {
+		ft_putnbr(n / 10);
+		ft_putnbr(n % 10);
+        }
 	else
-	{
-		ft_putchar(nb + '0');
-	}
+        {
+		ft_putchar(n + '0');
+        }
 }
